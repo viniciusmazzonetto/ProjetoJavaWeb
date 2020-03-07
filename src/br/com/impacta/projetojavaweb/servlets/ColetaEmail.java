@@ -19,6 +19,9 @@ public class ColetaEmail extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String email = req
+		
+		
 		resp.setCharacterEncoding("ISO-8859-1");
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter();
@@ -27,7 +30,7 @@ public class ColetaEmail extends HttpServlet {
 		out.println("<title>Sistema</title>");
 		out.println("</head>");
 		out.println("<body>");
-		out.println("<h2>Bem vindo - "+ usuario.getLogin() +" informa seu email</h2><br/>");
+	//	out.println("<h2>Bem vindo - "+ usuario.getLogin() +" informa seu email</h2><br/>");
 		out.println("<form method =\"post\" action=\"adicionaEmailCookie\">" );
 		out.println("Email: <br/> <input type=\"text\" name=\"email\" size=\"80\"><br/>");
 		out.println("<p><input type=\"Submit\" value\"Enviar\"></p>");
