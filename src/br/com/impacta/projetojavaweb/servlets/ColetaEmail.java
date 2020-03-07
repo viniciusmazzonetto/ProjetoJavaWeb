@@ -19,7 +19,7 @@ public class ColetaEmail extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String email = req
+		String email = req.getParameter(arg0)
 		
 		
 		resp.setCharacterEncoding("ISO-8859-1");
